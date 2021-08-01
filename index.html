@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planet Weight Calculator</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+
+</head>
+<body>
+
+    <main class="main">
+        <div class="card">
+            <header>
+                <h1>Calculate weight of an object on a planet</h1>
+                <form onsubmit="return false">
+                    <input class='weight common-input' type="text" id="mass" placeholder="Mass in any unit" />
+                    <input type="submit" class="btn" value="Calculate" >
+                </form>
+            </header>
+
+            <section>
+                <div class="flex-container">
+                    <div class="flex-item image">
+                        <h2>Mercury</h2>
+                        <a href="https://nineplanets.org/mercury/" target="_blank" rel="noopener noreferrer"><img src='images/mercury.png' class="planet-image"/></a>
+                        <p>The weight is</p>
+                        <input class="new-weight common-input planet--0" type="text" readonly>
+                    </div>
+                    <div class="flex-item image">
+                        <h2>Venus</h2>
+                        <a href="http://nineplanets.org/venus/" target="_blank" rel="noopener noreferrer"><img src='images/venus.png' class="planet-image" /></a>
+                        <p>The weight is</p>
+                        <input class="new-weight common-input planet--1" type="text" readonly>
+                    </div>
+                    <div class="flex-item image">
+                        <h2>Earth</h2>
+                        <a href="http://nineplanets.org/earth/" target="_blank" rel="noopener noreferrer"><img src='images/earth.png' class="planet-image" /></a>
+                        <p>The weight is</p>
+                        <input class="new-weight common-input planet--2" type="text" readonly>
+                    </div>
+                    <div class="flex-item image">
+                        <h2>Mars</h2>
+                        <a href="http://nineplanets.org/mars/" target="_blank" rel="noopener noreferrer"><img src='images/mars.png' class="planet-image" /></a>
+                        <p>The weight is</p>
+                        <input class="new-weight common-input planet--3" type="text" readonly>
+                    </div>
+                    <div class="flex-item image">
+                        <h2>Jupiter</h2>
+                        <a href="http://nineplanets.org/jupiter/" target="_blank" rel="noopener noreferrer"><img src='images/jupiter.png' class="planet-image" /></a>
+                        <p>The weight is</p>
+                        <input class="new-weight common-input planet--4" type="text" readonly>
+                    </div>
+                    <div class="flex-item image">
+                        <h2>Saturn</h2>
+                        <a href="http://nineplanets.org/saturn/" target="_blank" rel="noopener noreferrer"><img src='images/saturn.png' class="planet-image" /></a>
+                        <p>The weight is</p>
+                        <input class="new-weight common-input planet--5" type="text" readonly>
+                    </div>
+                    <div class="flex-item image">
+                        <h2>Uranus</h2>
+                        <a href="http://nineplanets.org/uranus/" target="_blank" rel="noopener noreferrer"><img src='images/uranus.png' class="planet-image" /></a>
+                        <p>The weight is</p>
+                        <input class="new-weight common-input planet--6" type="text" readonly>
+                    </div>
+                    <div class="flex-item image">
+                        <h2>Neptune</h2>
+                        <a href="http://nineplanets.org/neptune/" target="_blank" rel="noopener noreferrer"><img src='images/neptune.png' class="planet-image" /></a>
+                        <p>The weight is</p>
+                        <input class="new-weight common-input planet--7" type="text" readonly>
+                    </div>
+                    <div class="flex-item image">
+                        <h2>Pluto</h2>
+                        <a href="http://nineplanets.org/pluto/" target="_blank" rel="noopener noreferrer"><img src='images/pluto.png' class="planet-image" /></a>
+                        <p>The weight is</p>
+                        <input class="new-weight common-input planet--8" type="text" readonly>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
