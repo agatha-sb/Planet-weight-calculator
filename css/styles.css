@@ -26,7 +26,7 @@ body    {
     -webkit-backdrop-filter: blur(7px) saturate(107%);
     background-color: rgba(17, 25, 40, 0.37);
     border-radius: 12px;
-    width: 60%;
+    width: 80%;
     margin: 2rem auto;
     padding: 5%;
 }
