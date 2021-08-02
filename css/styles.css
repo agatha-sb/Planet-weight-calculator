@@ -15,20 +15,17 @@ body    {
     background-repeat: repeat-y;
     font-family: 'Roboto', sans-serif;
     display: flex;
-    /* align-items: center; */
     justify-content: center;
     min-height: 100vh;
     margin: 0;
 }
 
 .card {
-    /* align-items: center; */
     justify-content: center;
     backdrop-filter: blur(7px) saturate(107%);
     -webkit-backdrop-filter: blur(7px) saturate(107%);
     background-color: rgba(17, 25, 40, 0.37);
     border-radius: 12px;
-    /* border: 0px solid rgba(255, 255, 255, 0.125); */
     width: 60%;
     margin: 2rem auto;
     padding: 5%;
@@ -53,20 +50,17 @@ p   {
     font-size: 1.6rem;
 }
 
-.weight::placeholder    {
-    padding: auto ;
-    overflow: visible !important;
-    opacity: 0.7;
-}
-
 .flex-container {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    /* width: fit-content; */
 }
 
 .flex-item  {
-    flex: 0 1 33.33%;
+    display: block;
+    flex: 1 1 30%;
+    order: 0;
     padding: 3% 1% 0;
 }
 
@@ -74,7 +68,6 @@ p   {
     display: block;
     margin: 0.5rem auto;
     width: 50%;
-    
 }
 
 .planet-image:hover {
@@ -97,7 +90,18 @@ p   {
     padding: 0.625rem 1.25rem 0.625rem 1.25rem;
     margin-right: 0.5rem;
     font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: visible;
 }
+
+.weight::placeholder    {
+    padding: auto ;
+    word-wrap: inherit;
+    /* overflow: visible !important; */
+    opacity: 0.7;
+}
+
 .new-weight {
     width: 12vw;
     height: 6.5vh;
@@ -134,11 +138,21 @@ p   {
     }
     p {font-size: 1.44rem;}
 
+    .flex-item  {
+        flex: 1 1 50%;
+    }
+
+    .flex-item:nth-child(9)  {
+        flex: 0 1 50%;
+       align-self: center;
+    }
+
     .btn, .weight, .new-weight {font-size: 1rem !important;}
 
-    .weight::placeholder { font-size: 0.8rem !important;}
+    .weight::placeholder { font-size: 1rem !important;}
 
-    .new-weight {height: 4.5vh !important;}
+    .new-weight {height: 4.5vh !important;
+    width: 11vw;}
 }
 
 @media only screen and (max-width: 1101px)  {
@@ -152,7 +166,7 @@ p   {
 
     .btn, .weight, .new-weight {font-size: 0.95rem !important;}
 
-    .weight::placeholder { font-size: 0.7rem !important;}
+    .weight::placeholder { font-size: 0.95rem !important;}
 
     .new-weight {height: 4vh !important;}
 }
@@ -168,7 +182,7 @@ p   {
 
     .btn, .weight, .new-weight {font-size: 0.85rem !important;}
 
-    .weight::placeholder { font-size: 0.45rem !important;}
+    .weight::placeholder { font-size: 0.85rem !important;}
 
     .new-weight {height: 3.6vh !important;}
 }
